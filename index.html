@@ -149,8 +149,15 @@
         import { getFirestore, doc, getDoc, setDoc, addDoc, collection, onSnapshot, query, updateDoc } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-firestore.js";
 
         // --- GLOBAL CONFIG & STATE ---
-        const appId = typeof __app_id !== 'undefined' ? __app_id : 'default-app-id';
-        const firebaseConfig = typeof __firebase_config !== 'undefined' ? JSON.parse(__firebase_config) : {};
+        const firebaseConfig = {
+          apiKey: "AIzaSyAgIQXqOl3NMMC5QmzHgsgm-SGJm_F8MLE",
+          authDomain: "diyassure.firebaseapp.com",
+          projectId: "diyassure",
+          storageBucket: "diyassure.firebasestorage.app",
+          messagingSenderId: "890016430107",
+          appId: "1:890016430107:web:90bf1ff7329bfa643f20be",
+          measurementId: "G-JQ9JPGDEPD"
+        ;
         
         let app, auth, db;
         let currentUser = null;
@@ -448,3 +455,4 @@
     </script>
 </body>
 </html>
+
